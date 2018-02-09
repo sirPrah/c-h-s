@@ -1,0 +1,360 @@
+TC1-TP4: Accessing the system through URL
+
+1. Open http://store.demoqa.com/
+
+Expected result: 
+Successfully load header, home page, navigation bar.
+
+---------------------------
+
+TC2-TP2: Access "My Account" as unregistered user (guest)
+
+1. Open Project home page as guest
+2. Click on "My Account" button 
+
+Expected result: 
+User is directed to Log in and Register page.
+
+---------------------------
+
+TC3-TP4: Access "My Account" as registered user with valid credentials
+
+1. Open Project home page as guest
+2. Click on "My Account" button -> navigate to Login/ Register page
+3. Enter valid username
+4. Enter valid password 
+5. Click "Login" button 
+
+Expected result: 
+User succesfully logs in, navigates to My Account page, Logout button visible.
+
+---------------------------
+
+TC4-TP4: Login with invalid credentials - password
+
+1. Open Project home page 
+2. Click on "My Account" button -> navigate to Login/ Register page
+3. Enter valid username
+4. Enter invalid password 
+5. Click "Login" button 
+
+Expected result: 
+Unanble to login, error message appears
+
+---------------------------
+
+TC5-TP4: Login with invalid credentials - username
+
+1. Open Project home page 
+2. Click on "My Account" button -> navigate to Login/ Register page
+3. Enter valid username
+4. Enter invalid password 
+5. Click "Login" button 
+
+Expected result: 
+Unanble to login, error message appears
+
+---------------------------
+
+TC6-TP4: Login with missing credentials - password
+
+1. Open Project home page 
+2. Click on "My Account" button -> navigate to Login/ Register page
+3. Enter valid username
+4. Leave password field empty
+5. Click "Login" button 
+
+Expected result: 
+Unable to log in, error message for missing information
+
+---------------------------
+
+TC7-TP4: Login with missing credentials - username
+
+1. Open Project home page 
+2. Click on "My Account" button -> navigate to Login/ Register page
+3. Leave username  field empty
+4. Enter valid password
+5. Click "Login" button 
+
+Expected result: 
+Unable to log in, error message for missing information
+
+---------------------------
+
+TC8-TP4: Login with missing credentials - username & password
+
+1. Open Project home page 
+2. Click on "My Account" button -> navigate to Login/ Register page
+3. Leave username  field empty
+4. Leave password field empty
+5. Click "Login" button 
+
+Expected result: 
+Unable to log in, error message for missing information
+
+---------------------------
+
+TC9-TP4: Logout from My Account
+
+1. Successfully log in to My Account
+2. Open My Account page 
+3. Click "Logout" button 
+
+Expected result: 
+User successfully logged out, redirected to Log in/ Register page
+
+---------------------------
+
+TC10-TP2: Access "Checkout" page as unregistered user (not logged in)
+
+1. Open Project home page
+2. Click on "Checkout" button 
+
+Expected result: 
+User is directed to Log in and Register page.
+
+---------------------------
+
+TC11 - TP2: Access "Checkout" page as a registered user
+
+1. Open Project home page
+2. Click My Account -> navigate to Login/ Register page
+3. Input valid credentials 
+4. Click "Login"
+5. Click on "Checkout" button 
+
+
+Expected result: 
+Navigates to Checkout page and Your cart section
+
+---------------------------
+
+TC12-TP1: Navigate Home page slider buttons - ordered buttons 
+
+1. Open Project home page 
+-> Page shows products in random order with slider buttons for navigation
+2. Click each subsequent slider button to show the products attached
+
+Expected result: 
+Clicking on each slider button shows a distinct product post. 
+
+---------------------------
+
+TC13-TP1: Navigate Home page slider - random buttons
+
+1. Open Project home page 
+-> Page shows products in random order with slider buttons for navigation
+2. Click each slider buttons out of order (first - last/ every other button) to show the products attached
+
+Expected result: 
+Clicking on each slider button shows a distinct product post (buttons attached to specific product, not a sequence)
+
+---------------------------
+
+TC14-TP1: Navigate Home page slider - outside range of buttons
+
+1. Open Project home page 
+-> Page shows products in random order with slider buttons for navigation
+2. Click above/below/left/right of each slider button
+
+Expected result: 
+Clicking around slider buttons does not change the products dispayed. 
+
+---------------------------
+
+TC15-TP2: Product category navigation panel opens appropriate page
+
+1. Open project home page 
+2. Move cursor above Product Category tab -> drop down menu should appear
+3. Click on a category from the menu (repeat for all)
+
+Expected result: 
+Successfully navigates to a page showing products belonging only to the selected category. 
+
+---------------------------
+
+TC16-TP1: Product category display functionalities - grid or list
+
+1. Navigate to a product category page (see TC15)
+2. Click on "Grid" icon
+3. Click on "List" icon
+4. Click  back on "Grid" icon
+(repeat for all categories)
+
+Expected result: 
+Page successfuly switches the display layout for products in category. 
+
+---------------------------
+
+TC17-TP3: Navigate Service and Support page
+
+1. Open Product home page
+2. Click on "Service and Support" tab
+
+Expected result: 
+Succesfully navigate to Service and Support pages. 
+
+---------------------------
+
+TC18-TP4: Add item to cart - using "Buy Now" button
+
+1. Open Project Home page
+2. Pick an item from product slider
+3. Click "Buy now"
+
+Expected result: 
+Item is succesfully added to cart, opptions to "Continue shopping" or "Go to Checkout" appear
+
+---------------------------
+
+TC19-TP4: Add item to cart - using "Add to Cart" button
+
+1. Open any Project page
+2. Pick an item 
+3. Click "Add to cart"
+
+Expected result: 
+Item is succesfully added to cart, opptions to "Continue shopping" or "Go to Checkout" appear
+
+---------------------------
+
+TC20-TP2: Continue shopping after adding item to cart
+
+1. Add an item to cart (TC18 & TC19)
+2. Select "Continue Shopping"
+
+Expected result: 
+User is redirected back to Home page. 
+
+---------------------------
+
+TC21-TP4: Go to checkout after adding item to cart
+
+1. Add an item to cart (TC18 & TC19)
+2. Select 'Go to Checkout' -> user is prompted to follow 3 step process 
+3. "Your Cart" section to check product infromation
+   3.1. Update quantity of item
+        - Choose an item
+        - Type in desired number of items in box
+        - Click "Update"
+        Exp. result: 
+        Successfully updated quantity of item
+   3.2. Remove item from cart 
+        - Choose an item
+        - Click "Remove"
+        Exp. result: 
+        Successfully removed item from cart
+4. Click "Continue"
+
+Expected result: 
+User successfully navigates to Step 2 of checkout process
+
+---------------------------
+
+TC22-TP4: Step 2 of checkout - details and shipping
+
+1. Navigate to step 2 (TC21)
+2. Calculate shipping costs
+3. Setect a country from drop down menu
+    3.1. For USA/other counreis
+        - Type a valid state/province in box
+        - Click 'Calculate'
+          Exp. Result:
+          Successfully update shipping costs
+        - Type an invalid state/province in box
+        - Click 'Calculate'
+          Exp. Result:
+          Error message prompt, unable to calculate shipping
+4. Click "Calculate"
+5. Contact and shipping details
+   5.1 Fill in contact details and shipping address, click "Purchase"
+       Exp. result:
+       Successfully navigate to next step
+   5.2 Fill in incomplete details (each mandatory one separate test), click "Purchase"
+       Exp. result:
+       Unable to proceed to next step
+   5.3 Leave all mandatory details empty
+       Exp. result:
+       Unable to proceed to next step, go back to Your cart page
+
+Expected result: 
+Successfully navigate to step 3. 
+
+---------------------------
+
+TC23-TP2: Navigate to "All Products" page
+
+1. Open Project home page
+2. Click "All Products" tab
+
+Expected result: 
+Successfully navigate to All Products page
+
+---------------------------
+
+TC24-TP3: My Account functionalities - Purchase history
+
+1. Open Project home page
+2. Click "My Account" Button 
+3. Clik on "Purchase history"
+
+Expected result: 
+User successfully navigates to Purchase history page, transaction information visisble
+
+---------------------------
+
+TC25-TP4: My Account functionalities - Your details
+
+1. Open Project home page
+2. Click "My Account" Button 
+3. Clik on "Your details"
+
+Expected result: 
+Successfully navigate to Your details page, options to view and update personal and shipping details visible. 
+
+---------------------------
+
+TC26-TP3: My Account functionalities - Your downloads
+
+1. Open Project home page
+2. Click "My Account" Button 
+3. Clik on "Your downloads"
+
+Expected result: 
+Successfully navigate to Your downloads page, history of purchased downloadable products visible. 
+
+---------------------------
+
+TC27-TP1: Search bar
+
+1. Open Project Home page
+2. Type a desired product keyword from range into box
+3. Press Enter
+
+Expected result: 
+Search successfully loads products featuring keyword
+
+---------------------------
+
+TC28-TP1: Search bar
+
+1. Open Project Home page
+2. Type a desired product keyword unrelated to range into box (e.g. dress)
+3. Press Enter
+
+Expected result: 
+Error message appears no product was found
+
+---------------------------
+
+TC29-TP1: Search bar
+
+1. Open Project Home page
+2. Click on search bar, leave space empty
+3. Press Enter
+
+Expected result: 
+Search loads full array of products available on website.
+
+---------------------------
